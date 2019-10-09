@@ -1,6 +1,6 @@
 ---
 id: track
-title: aimhub CLI Documentation
+title: aimhub SDK
 sidebar_label: Tracking artifacts
 ---
 
