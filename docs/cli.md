@@ -33,7 +33,3 @@ aim push -r <remote_name>
 ```
 Other options
 - `-r` or `--remote` the name of the remote to push to
-
-
-
-
