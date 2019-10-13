@@ -2,8 +2,6 @@
 id: quick_start
 title: Qucik Start
 ---
-
-# Quick Start
 The following guide will show you how to quickly get up and running with aim experimnents.
 
 ## Install
