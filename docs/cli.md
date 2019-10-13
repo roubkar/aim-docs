@@ -22,7 +22,10 @@ List the remotes addes to the repo
 ```sh
 aim remote ls
 ```
-
+Remove remote from the list of remotes
+```sh
+aim remote rm -n origin
+```
 
 Other options
 - `-n` or `--name` name of the remote (such as `origin`)
