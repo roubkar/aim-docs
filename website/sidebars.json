@@ -1,15 +1,12 @@
 {
-  "cli": {
-    "CLI Commands": [
-      "init",
-      "push",
-      "remote"
+  "docs": {
+    "Docs": [
+      "cli",
+      "sdk"
     ]
   },
-  "sdk": {
-    "Python SDK": [
-      "track",
-      "save"
+  "quick_start": {
+    "Quick Start": [
     ]
   }
 }

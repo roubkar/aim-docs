@@ -30,9 +30,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'init', label: 'aim CLI'},
-    {doc: 'track', label: 'aim SDK'},
-    {doc: 'tutorial', label: 'Tutorials'},
+    {doc: 'cli', label: 'Docs'},
+    {doc: 'quick_start', label: 'Quick Start'}
   ],
 
   /* path to images for header/footer */
@@ -58,7 +57,9 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: 'darcula',
+    version: '9.12.0',
+    defaultLang: 'shell'
   },
 
   // Add custom scripts here that would be placed in <script> tags.
