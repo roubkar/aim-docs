@@ -3,10 +3,7 @@ id: cli
 title: aim CLI
 sidebar_label: CLI
 ---
-
-# CLI
-
-Aim CLI is a git-like tool that allows to push, pull the results of experiments.
+aim CLI is a git-like tool that allows to push, pull the results of experiments.
 
 ## aim init
 Initializes the aim repository.
@@ -19,8 +16,13 @@ Creates `.aim` folder in the folder where all the tracking info is saved.
 ## aim remote
 Adds remote to the aim repo to push the training info to.
 ```sh
-aim add -n origin -u <origin url>
+aim remote add -n origin -u <origin url>
 ```
+List the remotes addes to the repo
+```sh
+aim remote ls
+```
+
 
 Other options
 - `-n` or `--name` name of the remote (such as `origin`)

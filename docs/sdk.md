@@ -3,10 +3,7 @@ id: sdk
 title: aim SDK
 sidebar_label: SDK
 ---
-
-# SDK
-
-Aim SDK is a very simple and easy to learn tool that saves the info about the
+aim SDK is a very simple and easy to learn tool that saves the info about the
 
 ```py
 import aim
