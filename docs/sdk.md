@@ -1,7 +1,7 @@
 ---
 id: sdk
 title: aim SDK
-sidebar_label: SDK
+sidebar_label: python client
 ---
 aim SDK is a very simple and easy to learn tool that saves the info about the
 
@@ -22,6 +22,15 @@ Loss is tracked in the following way:
 ```py
 track(aim.loss, 'name of the loss', '0.2') # 0.2 is the loss
 ```
+
+### Metric
+aim SDK allows to track any metrics. Loss is a specific case of Metric
+Here is an example:
+
+```py
+track(aim.Metric, 'name of the metric', 0.5) # 0.5 is the value that needs to be passed
+```
+Metrics are automatically translated into line charts on the aim hub ui.
 
 ### Misclassification
 Misclassifications allow to track the correct lable, image and what actually was classified. It looks like this:

@@ -1,7 +1,7 @@
 ---
 id: cli
 title: aim CLI
-sidebar_label: CLI
+sidebar_label: command line interface
 ---
 aim CLI is a git-like tool that allows to push, pull the results of experiments.
 
@@ -38,3 +38,4 @@ aim push -r <remote_name>
 ```
 Other options
 - `-r` or `--remote` the name of the remote to push to
+
