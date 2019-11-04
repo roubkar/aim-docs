@@ -39,3 +39,27 @@ aim push -r <remote_name>
 Other options
 - `-r` or `--remote` the name of the remote to push to
 
+## aim branch
+Create different experiment branches for your project.
+```sh
+aim branch add -n <branch_name>
+```
+Checkout to an existing branch
+```sh
+aim branch checkout -n <branch_name>
+```
+List all the branches
+```sh
+aim branch ls
+```
+Delete branch
+```sh
+aim branch rm -n <branch_name>
+```
+
+## aim auth
+Aim auth allows the users to seamlessly auth in their remote servers
+```sh
+aim auth -a <remote_address>
+```
+Will produce the key that need to be copy-pasted in the settings of the user

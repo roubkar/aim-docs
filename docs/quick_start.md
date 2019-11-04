@@ -26,6 +26,13 @@ aim init
 aim remote add -n origin -u http://aimhub.io/<username>/<train-mnist>
 ```
 
+## Authentication
+
+```sh
+  aim auth -a http://aimhub.io/<username>/
+```
+Produces a key which need to be copy pasted in the key section in user settings
+
 ## Train Model
 ```sh
 # download train file and requirements file
