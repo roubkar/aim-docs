@@ -69,12 +69,8 @@ pip install -r requirements.txt
 python -e 5 train_mnist.py
 ```
 
-## Push Training Info
+## Commit and Push Training Info
 ```sh
+aim commit -m "<commit message>"
 aim push
-```
-
-## Pull Training Info / Collaborate
-```sh
-aim pull
 ```
