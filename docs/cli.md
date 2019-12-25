@@ -31,6 +31,13 @@ Other options
 - `-n` or `--name` name of the remote (such as `origin`)
 - `-u` or `--url` url of the remote ()
 
+## aim commit
+Commit the run to remote.
+```sh
+aim commit -m "<Commit Message>"
+```
+**Note**: work can only be pushed after it's committed
+
 ## aim push
 Push the Training Info to the remote
 ```sh
