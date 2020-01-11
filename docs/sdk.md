@@ -55,3 +55,17 @@ track(aim.checkpoint, 'saved checkpoint name', 'epoch_name',
       })
 ```
 
+### Weights, Biases & Gradients
+Track weights, biases and Gradients with one line on any iteration:
+```py
+track(aim.weights, model)
+track(aim.gradients, model)
+# Where model is the PyTorch model object
+```
+
+### Visualize code changes
+In order to visualize the code changes, make sure to run
+```shell
+git add -A
+```
+so `aim` starts to track the individual code changes for each new run.
