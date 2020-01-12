@@ -2,7 +2,8 @@
   "docs": {
     "Docs": [
       "cli",
-      "sdk"
+      "sdk",
+      "jupyter"
     ]
   },
   "quick_start": {
