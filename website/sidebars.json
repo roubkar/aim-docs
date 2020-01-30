@@ -1,13 +1,16 @@
 {
+  "about": {
+    "About": []
+  },
+  "quick_start": {
+    "Quick Start": [
+    ]
+  },
   "docs": {
     "Docs": [
       "cli",
       "sdk",
       "jupyter"
-    ]
-  },
-  "quick_start": {
-    "Quick Start": [
     ]
   }
 }
