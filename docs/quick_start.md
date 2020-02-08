@@ -1,8 +1,8 @@
 ---
 id: quick_start
-title: Qucik Start
+title: Quick Start
 ---
-The following guide will show you how to quickly get up and running with aim experimnents.
+The following guide will show you how to quickly get up and running with aim experiments.
 
 ## Install
 
@@ -28,17 +28,40 @@ aim remote add -n origin -u http://aimhub.io/<username>/<train-mnist>
 
 ## Authentication
 
-Authentication at aimhub remote requires creating a key and setting it up in the user settings ui.
+Authentication at aimhub remote requires creating a key and setting it up in the user settings UI.
 Here is how to accomplish that:
-### Step 1
-Run the following command
-```sh
-  aim auth -a <your aimhub remote domain url> # https://aimhub.io
-```
-Produces a key which need to be copy pasted in the key section in user settings
-Here is how the output of that command looks like:
 
-<img src="/img/aimhub-key-generate.png" width="650">
+### Step 1
+Retrieve your authentication key by running the following commands:
+
+<div class="platform-code">
+<!--DOCUSAURUS_CODE_TABS-->
+<!--macOS-->
+
+```sh
+aim auth -a <your aimhub remote domain url> | pbcopy
+# Copies the key to your clipboard
+```
+<!--Linux-->
+
+```sh
+sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+aim auth -a <your aimhub remote domain url> | xclip -o -sel clip
+# Copies the key to your clipboard
+```
+
+<!--Windows-->
+
+```sh
+aim auth -a <your aimhub remote domain url> | clip
+# Copies the key to your clipboard
+```
+
+<!--END_DOCUSAURUS_CODE_TABS-->
+</div>
+
+The command produces a key which need to be pasted in the key section in user settings; follow steps to know how.
 
 ### Step 2
 Go to aimhub remote user settings by clicking at the profile image at the top right, selecting `Settings`:
@@ -51,7 +74,7 @@ Press create to insert the key.
 
 <img src="/img/aimhub-key-create.png" width="650">
 
-3. Insert the key and press creaate
+3. Paste the key and press create
 
 <img src="img/aimhub-key-inserted.png" width="650">
 
