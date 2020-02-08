@@ -61,8 +61,8 @@ The expected outcome - key installed successfully:
 ## Train Model
 ```sh
 # download train file and requirements file
-wget https://raw.githubusercontent.com/aimhubio/examples/master/pytorch/train_mnist.py
-wget https://raw.githubusercontent.com/aimhubio/examples/master/pytorch/requirements.txt
+wget https://raw.githubusercontent.com/aimhubio/aim/develop/examples/pytorch_track_all.py
+wget https://raw.githubusercontent.com/aimhubio/aim/develop/examples/requirements.txt
 # install the required dependencies
 pip install -r requirements.txt
 # train the mnist model
