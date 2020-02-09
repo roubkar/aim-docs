@@ -76,7 +76,7 @@ Press create to insert the key.
 
 3. Paste the key and press create
 
-<img src="img/aimhub-key-inserted.png" width="650">
+<img src="/img/aimhub-key-inserted.png" width="650">
 
 The expected outcome - key installed successfully:
 <img src="/img/aimhub-key-saved.png" width="650">
