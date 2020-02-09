@@ -14,8 +14,6 @@ jobs:
         persist-credentials: false
     - name: Setup Node
       uses: actions/setup-node@1
-      with:
-        node-version: '10.x'
     - name: Build
       run: |
         cd website && yarn install && yarn run build
