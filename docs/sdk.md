@@ -69,3 +69,53 @@ In order to visualize the code changes, make sure to run
 git add -A
 ```
 so `aim` starts to track the individual code changes for each new run.
+
+
+### Profiler
+Add Resource profiling for nodes, layers and other parts of the ML code.
+
+Here are examples:
+<div>
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PyTorch-->
+
+```py
+# Label blocks of code in PyTorch and profile their execution
+from aim import Profiler
+
+Profiler.label('sleep_1')
+time.sleep(0.3)
+Profiler.loop('sleep_1')
+```
+<!--Tensorflow-->
+
+```py
+# Profile parts of tf graph by wrapping them with training layers
+from aim import Profiler
+
+layer_2 = Profiler.tf.label('layer2', inp=layer_1)
+layer_2 = tf.add(tf.matmul(layer_2, weights['h2']), biases['b2'])
+layer_2 = Profiler.tf.loop('layer2', inp=layer_2)
+```
+
+<!--Keras-->
+
+```py
+# Label and profiel an entire layer in Keras
+from aim import Profiler
+
+model = Sequential()
+
+model.add(Profiler.keras.label('conv'))
+model.add(Conv2D(32, kernel_size=(3, 3),
+                 activation='relu',
+                 input_shape=input_shape))
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+model.add(Profiler.keras.loop('conv'))
+```
+
+<!--END_DOCUSAURUS_CODE_TABS-->
+</div>
+
