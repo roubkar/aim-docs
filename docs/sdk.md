@@ -10,6 +10,16 @@ import aim
 from aim import track
 ```
 
+## Init
+
+Initialize Aim Version Control from the code (substitutes CLI `aim init`)
+
+```py
+# Add the following code to the beginning of your training code to initialize the aim repo immediately with the first run
+# The aim repo will initialize only once unless overwrite is set to True
+aim.init(overwrite=False)
+```
+
 ## Track
 
 Tracking allows the user to save the intermediate values of tensors, scalars and other debugging metrics. It looks like this:
@@ -118,4 +128,3 @@ model.add(Profiler.keras.loop('conv'))
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 </div>
-
