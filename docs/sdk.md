@@ -18,6 +18,7 @@ Initialize Aim Version Control from the code (substitutes CLI `aim init`)
 # Add the following code to the beginning of your training code
 # Initializes the aim repo immediately with the first run
 # The aim repo will initialize only once unless overwrite is set to True
+
 aim.init(overwrite=False)
 ```
 
@@ -72,6 +73,12 @@ Track weights, biases and Gradients with one line on any iteration:
 track(aim.weights, model)
 track(aim.gradients, model)
 # Where model is the PyTorch model object
+```
+
+### Learning Rate Changes Per Layer
+Track the behavior of the learning rates per layer
+```py
+track(aim.learning_rate, optimizer, [labels=<arr_of_label_names_for_layers>])
 ```
 
 ### Visualize code changes
