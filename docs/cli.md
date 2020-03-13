@@ -70,3 +70,16 @@ Aim auth allows the users to seamlessly auth in their remote servers
 aim auth -a <remote_address>
 ```
 Will produce the key that need to be copy-pasted in the settings of the user
+
+
+## aim board
+Follow your training live with aim board.
+Aim Board is the stripped down version of the Hub that lets users to follow live training
+Run aim board in project folder
+```shell
+aim board up
+```
+Turn off the board in project folder
+```shell
+aim board down
+```
