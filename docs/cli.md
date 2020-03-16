@@ -74,7 +74,11 @@ Will produce the key that need to be copy-pasted in the settings of the user
 
 ## aim board
 Follow your training live with aim board.
-Aim Board is the stripped down version of the Hub that lets users to follow live training.
+
+Aim Board is a stripped down version of the Hub that lets users to follow live training.
+When run it mounts on .aim folder and makes a a hub-like website available to track experiments live in the local training environment.
+
+With the current version, only profilers are live updated. For other components please refresh the web page to get the updates. Full auto-updates coming soon in future versions.
 
 Run aim board in project folder
 ```shell
