@@ -89,7 +89,7 @@ wget https://raw.githubusercontent.com/aimhubio/aim/develop/examples/requirement
 # install the required dependencies
 pip install -r requirements.txt
 # train the mnist model
-python -e 5 train_mnist.py
+python pytorch_track_all.py
 ```
 
 ## Commit and Push Training Info
