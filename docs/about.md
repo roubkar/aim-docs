@@ -8,4 +8,4 @@ title: About
 
 <span style="color:#484f56">One of many visualizations to help debug fast and easy ...</span>
 
-<img src="/img/weights-distribution.png">
+
